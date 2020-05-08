@@ -2,7 +2,7 @@ function takeANumber(line, name) {
   if (line.length === 0) {
     line = [...name];
   } else {
-    line.append(name);
+    line.append([...name]);
   }
 
   return `Welcome, ${name}. You are number ${line.length} in line.`;
