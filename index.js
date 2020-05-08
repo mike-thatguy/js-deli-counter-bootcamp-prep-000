@@ -7,3 +7,11 @@ function takeANumber(line, name) {
     return `Hello, ${name}, you are number ${line.length} in the line.`;
   }
 }
+
+function nowServing(line) {
+  if (line.length === 0) {
+    return "There is nobody waiting to be served!";
+  } else {
+    return line.pop();
+  }
+}
