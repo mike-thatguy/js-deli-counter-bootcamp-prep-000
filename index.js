@@ -1,9 +1,9 @@
 function takeANumber(line, name) {
   if (line.length === 0) {
-    line = [name];
+    line = [...name];
     return `Congrats, ${name}, you are number 1 in the line!`;
   } else {
-    line.push(name);
+    line = line.concat(name);
     return `Hello, ${name}, you are number ${line.length} in the line.`;
   }
 }
