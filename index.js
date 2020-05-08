@@ -4,7 +4,7 @@ function takeANumber(line, name) {
     return `Congrats, ${name}, you are number 1 in the line!`;
   } else {
     line = line.concat(name);
-    return `Hello, ${name}, you are number ${line.length} in the line.`;
+    return `Welcome, ${name}. You are number ${line.length} in line.`;
   }
 }
 
